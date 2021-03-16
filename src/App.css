@@ -33,9 +33,11 @@ body {
 .search {
   display: flex;
   justify-content: center;
-  padding-top:20px;
-  border-bottom: 1px solid #222;
-  padding-bottom: 20px;
+  padding-top:10px;
+  margin: 0 2%;
+  align-items: center;
+  border-bottom: 1px solid rgb(191, 191, 191);
+  padding-bottom: 10px;
 }
 
 .search input {
@@ -47,7 +49,7 @@ body {
   border: none;
   text-align: center;
   width: 40%;
-  height: 50px;
+  height: 35px;
 }
 .search input:focus {
   content: " ";
@@ -184,10 +186,10 @@ h1 {
   display: flex;
   align-items: center;
   border: none;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 2%;
   color: #4c4c4c;
-  padding: 10px;
+  padding: 7px;
 }
 
 .btnSearch::after {
