@@ -53,8 +53,6 @@ body {
   border: none;
   background-color: rgb(243, 243, 243);
   width: 35%;
-  -webkit-transition: width .35s ease-in-out;
-  transition: width .35s ease-in-out;
   color: #191919;
 }
 
