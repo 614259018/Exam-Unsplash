@@ -81,10 +81,10 @@ const Profile = () => {
               <HiPhotograph /> Photo {user.total_photos}
             </p>
             <p className="total_likes">
-              <AiFillLike /> Likes {user.total_likes}
+              <BsFillHeartFill /> Likes {user.total_likes}
             </p>
             <p className="total_collections">
-              <BsFillHeartFill /> Collection {user.total_collections}
+              <MdDescription /> Collection {user.total_collections}
             </p>
           </div>
         </div>
