@@ -47,7 +47,7 @@ body {
   border: none;
   text-align: center;
   width: 40%;
-  height: 10px;
+  height: 50px;
 }
 .search input:focus {
   content: " ";
@@ -77,7 +77,7 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   box-sizing: border-box;
-  margin: 0px 10%;
+  margin: 2% 10%;
   width: 80%;
 }
 
@@ -234,7 +234,7 @@ img {
   width: 40%;
   margin: 0 20%;
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 }
 
 .Profile-img{
@@ -242,13 +242,13 @@ img {
 }
 
 .Profile-img img{
-  width: 225px;
+  width: 175px;
   border-radius: 50%;
 }
 
 .info-group{
   font-size: 24px;
-  margin-left: 50px;
+  margin-left: 150px;
 }
 
 .head-user{
