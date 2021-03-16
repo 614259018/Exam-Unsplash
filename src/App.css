@@ -153,7 +153,7 @@ path {
   font-size: 18px;
 }
 
-.numLike span span {
+.numLike span span span {
   font-size: 16px;
 }
 
@@ -231,7 +231,7 @@ img {
 /* Profile Section */
 .profile-info-group{
   display: flex;
-  width: 40%;
+  width: 20%;
   margin: 0 20%;
   margin-top: 100px;
   margin-bottom: 200px;
@@ -248,7 +248,7 @@ img {
 
 .info-group{
   font-size: 24px;
-  margin-left: 150px;
+  margin-left: 75px;
 }
 
 .head-user{

@@ -105,7 +105,7 @@ const Profile = () => {
                   </div>
                   <div className="like">
                     <p className="numLike" key={item.id}>
-                      <ImHeart /> <span> </span> {item.likes} Likes
+                      <ImHeart /> <span> </span> {item.likes} <span> </span> <span> Likes </span>
                     </p>
                   </div>
                   <div className="comment">
