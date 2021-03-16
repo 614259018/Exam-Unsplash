@@ -39,23 +39,29 @@ body {
 }
 
 .search input {
-  padding: 15px;
+  padding: 5px;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 15px;
   background-color: rgb(228, 228, 228);
   color: #191919;
   border: none;
+  text-align: center;
+  width: 25%;
 }
 .search input:focus {
   content: " ";
   border: none;
-  background-color: rgb(251, 251, 251);
+  background-color: rgb(243, 243, 243);
+  width: 35%;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+  color: #191919;
 }
 
 .search a {
   color: #222;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   margin: 0 2%;
   display: flex;
@@ -131,11 +137,11 @@ body {
 }
 
 path {
-  width: 100px;
+  width: 50px;
 }
 
 .numLike {
-  font-size: 25px;
+  font-size: 18px;
   color: #cc2424;
   margin: 5px;
   align-items: center;
@@ -146,11 +152,11 @@ path {
 }
 .numLike span {
   color: #191919;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .numLike span span {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .namecomment {
@@ -183,10 +189,10 @@ h1 {
   font-size: 30px;
   margin: 0 2%;
   color: #4c4c4c;
-  padding: 0 20px;
+  padding: 10px;
 }
 
-.btnSearch:focus {
+.btnSearch::after {
   border: none;
   border-radius: 50%;
 }
@@ -227,7 +233,7 @@ img {
 /* Profile Section */
 .profile-info-group{
   display: flex;
-  width: 50%;
+  width: 40%;
   margin-left: 25%;
   margin-top:100px ;
   margin-bottom: 150px;
@@ -244,7 +250,7 @@ img {
 
 .info-group{
   font-size: 24px;
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .head-user{
@@ -260,12 +266,13 @@ img {
   font-weight: 300;
   color: #262626;
   width: 30%;
+  font-size: 32px;
 }
 
 .follow {
   display: flex;
   justify-content: end;
-  width: 70%;
+  width: 60%;
 }
 
 .follow p{
@@ -273,11 +280,13 @@ img {
   border: 1px solid #222 ;
   padding: 10px 15px;
   border-radius: 6px;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 .user-bio, 
 .user-address {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .user-bio {
@@ -296,6 +305,7 @@ img {
 }
 .photos-like-collections p {
   margin: 0 50px;
+  font-size: 16px;
 }
 
 .img-over {
@@ -308,5 +318,5 @@ img {
 }
 
 .search .logo {
-  font-size:40px;
+  font-size:34px;
 }

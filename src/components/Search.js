@@ -34,11 +34,10 @@ const Search = () => {
       <div className="search">
         <a href="/">Unsplash</a>
         <input
-          style={{ width: "60%" }}
           type="text"
           value={value}
           onChange={(e) => setValue(e.target.value)}
-          placeholder=" Search "
+          placeholder=" ..Search.. "
         />
         <button className="btnSearch" onClick={() => searchImages()}>
           <FaSearch />
@@ -78,7 +77,7 @@ const Search = () => {
                 </div>
                 <div className="like">
                   <p className="numLike" key={item.id}>
-                    <ImHeart />
+                    <ImHeart /> <span> </span>
                     <span> {item.likes} </span> <span>Likes</span>
                   </p>
                 </div>

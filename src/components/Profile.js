@@ -59,12 +59,12 @@ const Profile = () => {
               <div className="follow">
                 <p>
                   <RiUserFollowFill />
-                  Following
+                  <span> </span>Following<span> </span>
                   {user.following_count}
                 </p>
                 <p>
                   <RiUserAddFill />
-                  Followers
+                  <span> </span>Followers<span> </span>
                   {user.followers_count}
                 </p>
               </div>
@@ -105,7 +105,7 @@ const Profile = () => {
                   </div>
                   <div className="like">
                     <p className="numLike" key={item.id}>
-                      <ImHeart /> {item.likes} Likes
+                      <ImHeart /> <span> </span> {item.likes} Likes
                     </p>
                   </div>
                   <div className="comment">
