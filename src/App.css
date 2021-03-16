@@ -1,26 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
-	font-size: 10px;
+  font-size: 10px;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "Open Sans", Arial, sans-serif;
-	min-height: 100vh;
-	background-color: #fafafa;
-	color: #262626;
-	padding-bottom: 3rem;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #262626;
+  padding-bottom: 3rem;
 }
 
 .App {
@@ -31,11 +33,13 @@ body {
 .search {
   display: flex;
   justify-content: center;
-  margin: 2% 5%;
+  margin: 2% 2%;
+  border-bottom: 1px solid #222;
+  padding-bottom: 35px;
 }
 
 .search input {
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
   font-size: 25px;
   background-color: rgb(228, 228, 228);
@@ -48,12 +52,18 @@ body {
   background-color: rgb(251, 251, 251);
 }
 
-.search span {
+.search a {
+  color: #222;
+  text-decoration: none;
   font-size: 30px;
   font-weight: 700;
   margin: 0 2%;
   display: flex;
   align-items: center;
+}
+
+.search a:hover {
+  color: #000;
 }
 
 .gallery {
@@ -72,6 +82,15 @@ body {
   width: 33.33%;
   margin-bottom: 20px;
   padding: 10px;
+}
+
+.img-over-hidden {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
 }
 
 .content {
@@ -115,24 +134,36 @@ path {
   width: 100px;
 }
 
-.numLike{
+.numLike {
   font-size: 25px;
   color: #cc2424;
   margin: 5px;
   align-items: center;
 }
 
-.numLike span{
+.numLike span {
   color: #191919;
 }
-.numLike span{
+.numLike span {
   color: #191919;
   font-size: 20px;
 }
 
-.numLike span span{
+.numLike span span {
   font-size: 20px;
 }
+
+.namecomment {
+  font-size: 16px;
+  height: 60px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+  .img-over-hidden {
+    height: 350px;
+  }
+  }
 /*------------------Heading------------------*/
 header {
   max-width: 90rem;
@@ -162,79 +193,120 @@ h1 {
 
 /*----------------------Profile-----------------------*/
 
-
 .container-profile {
-	max-width: 93.5rem;
-	margin: 0 auto;
-	padding: 0 2rem;
+  max-width: 93.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 img {
-	display: block;
+  display: block;
 }
 
 .profile-image {
-	float: left;
-	width: calc(33.333% - 1rem);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 3rem;
+  float: left;
+  width: calc(33.333% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
 }
 
 .btn:focus {
-	outline: 0.5rem auto #4d90fe;
+  outline: 0.5rem auto #4d90fe;
 }
 
 .visually-hidden {
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Profile Section */
-/*
-.profile {
-	padding: 5rem 0;
+.profile-info-group{
   display: flex;
-  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top:100px ;
+  margin-bottom: 150px;
 }
 
-.profile_image {
-  width: 250px;
+.Profile-img{
+  width: 30%;
+}
+
+.Profile-img img{
+  width: 225px;
   border-radius: 50%;
 }
 
-.profile::after {
-	content: "";
-	display: block;
-	clear: both;
+.info-group{
+  font-size: 24px;
+  padding-left: 50px;
 }
 
-.profile-image {
-	float: left;
-	width: calc(33.333% - 1rem);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 3rem;
+.head-user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 690px;
+  font-size: 26px;
+  margin: 15px 0 25px 0;
 }
 
-.profile-image img {
-	border-radius: 50%;
+.head-user h2{
+  font-weight: 300;
+  color: #262626;
+  width: 30%;
 }
 
-.profile-user-settings,
-.profile-stats,
-.profile-bio {
-	float: left;
-	width: calc(66.666% - 2rem);
+.follow {
+  display: flex;
+  justify-content: end;
+  width: 70%;
 }
 
-.profile-user-settings .username {
-  font-size: 36px;
-  font-weight: 700;
+.follow p{
+  margin-left:20px ;
+  border: 1px solid #222 ;
+  padding: 10px 15px;
+  border-radius: 6px;
 }
-*/
+
+.user-bio, 
+.user-address {
+  font-size: 20px;
+}
+
+.user-bio {
+  margin-bottom: 20px ;
+}
+
+.photos-like-collections {
+  display: flex;
+  position: absolute;
+  margin-top: 320px;
+  font-size: 22px;
+  justify-content: space-between;
+  width: 940px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #222;
+}
+.photos-like-collections p {
+  margin: 0 50px;
+}
+
+.img-over {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.search .logo {
+  font-size:40px;
+}

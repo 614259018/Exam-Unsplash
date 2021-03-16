@@ -7,11 +7,13 @@ const Search = () => {
   const [value, setValue] = useState([]);
   const [results, setResults] = useState([]);
 
-  const key = (process.env.REACT_APP_ACCESSKEY);
+  const key = process.env.REACT_APP_ACCESSKEY;
 
   const searchImages = () => {
     fetch(
-      `https://api.unsplash.com/search/photos?client_id=`+key+`&query=${value}&orientation=squarish`
+      `https://api.unsplash.com/search/photos?client_id=` +
+        key +
+        `&query=${value}&orientation=squarish`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -30,7 +32,7 @@ const Search = () => {
   return (
     <div className="container">
       <div className="search">
-        <span>Unsplash</span>
+        <a href="/">Unsplash</a>
         <input
           style={{ width: "60%" }}
           type="text"
@@ -38,7 +40,9 @@ const Search = () => {
           onChange={(e) => setValue(e.target.value)}
           placeholder=" Search "
         />
-        <button className="btnSearch" onClick={() => searchImages()}><FaSearch /></button>
+        <button className="btnSearch" onClick={() => searchImages()}>
+          <FaSearch />
+        </button>
       </div>
       <div className="gallery">
         {results.map((item) => {
@@ -50,8 +54,12 @@ const Search = () => {
                     className="profile_image"
                     key={item.id}
                     src={item.user.profile_image.medium}
+                    onClick={() => {
+                      sendProfile(item.user.username);
+                    }}
                   />
                   <a
+                    href="#"
                     className="name"
                     key={item.id}
                     onClick={() => {
@@ -61,14 +69,17 @@ const Search = () => {
                     {item.user.username}
                   </a>
                 </div>
-                <img
-                  className="regular"
-                  key={item.id}
-                  src={item.urls.regular}
-                />
+                <div className="img-over-hidden">
+                  <img
+                    className="regular"
+                    key={item.id}
+                    src={item.urls.regular}
+                  />
+                </div>
                 <div className="like">
                   <p className="numLike" key={item.id}>
-                    <ImHeart /><span> {item.likes} </span> <span>Likes</span>
+                    <ImHeart />
+                    <span> {item.likes} </span> <span>Likes</span>
                   </p>
                 </div>
                 <div className="comment">
