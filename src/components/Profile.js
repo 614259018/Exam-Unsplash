@@ -6,8 +6,6 @@ import { HiPhotograph } from "react-icons/hi";
 import { BsFillHeartFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import { MdDescription } from "react-icons/md";
-import { IoHeartCircleSharp } from "react-icons/io5";
-import { AiFillCodeSandboxSquare } from "react-icons/ai";
 
 
 
