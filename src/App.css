@@ -340,6 +340,7 @@ img {
   opacity: 0;
   transition: .5s ease;
   background-color: #00000079;
+  padding: 10px;
 }
 
 .img-over:hover .overlay {
@@ -375,12 +376,12 @@ img {
 
 .overlay .namecomment {
   font-size: 16px;
-  width: 100%;
+  width: 95;
   height: 40px;
   overflow: hidden;
   position: absolute;
   color: #fafafa;
-  margin: 94.2% 0 0 0;
+  margin: 90% 0 0 0;
   background-color: rgba(34, 34, 34, 0);
 }
 
@@ -388,6 +389,7 @@ img {
   background-color: rgba(34, 34, 34, 0);
   color: #fafafa;
   font-weight: 900;
+  margin-right: 10px;
 }
 
 .search .logo {
