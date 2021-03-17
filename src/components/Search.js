@@ -83,7 +83,15 @@ const Search = () => {
                 </div>
                 <div className="comment">
                   <p className="namecomment" key={item.id}>
-                    <span>{item.user.username}</span> {item.description}
+                    <a
+                    href="#"
+                      onClick={() => {
+                        sendProfile(item.user.username);
+                      }}
+                    >
+                      {item.user.username}
+                    </a>{" "}
+                    {item.description}
                   </p>
                 </div>
               </div>

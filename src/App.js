@@ -1,5 +1,4 @@
 import React from "react";
-import { Heading } from "./components/Heading";
 import Search from "./components/Search";
 import Profile from "./components/Profile";
 import { BrowserRouter as Router, Route } from "react-router-dom";
