@@ -3,10 +3,14 @@ import { ImHeart } from "react-icons/im";
 import { RiUserAddFill } from "react-icons/ri";
 import { RiUserFollowFill } from "react-icons/ri";
 import { HiPhotograph } from "react-icons/hi";
-import { AiFillLike } from "react-icons/ai";
 import { BsFillHeartFill } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md";
 import { MdDescription } from "react-icons/md";
+import { IoHeartCircleSharp } from "react-icons/io5";
+import { AiFillCodeSandboxSquare } from "react-icons/ai";
+
+
+
 
 const Profile = () => {
   const [profile, setProfile] = useState([]);
@@ -102,16 +106,14 @@ const Profile = () => {
                       key={item.id}
                       src={item.urls.regular}
                     />
-                  </div>
-                  <div className="like">
-                    <p className="numLike" key={item.id}>
-                      <ImHeart /> <span> {item.likes} </span> <span> Likes </span>
-                    </p>
-                  </div>
-                  <div className="comment">
-                    <p className="namecomment" key={item.id}>
+                    <div className="overlay">
+                      <div className="text">
+                      <ImHeart className="icon" /> {item.likes} Likes
+                      </div>
+                      <p className="namecomment" key={item.id}>
                       <span>{item.user.username}</span> {item.description}
                     </p>
+                    </div>
                   </div>
                 </div>
               </div>
