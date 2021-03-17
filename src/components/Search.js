@@ -48,7 +48,7 @@ const Search = () => {
           return (
             <div className="items">
               <div className="content">
-                <div className="username">
+                <div className="username username--search">
                   <img
                     className="profile_image"
                     key={item.id}
@@ -75,13 +75,15 @@ const Search = () => {
                     src={item.urls.regular}
                   />
                 </div>
+                <div className="bttom--item">
                 <div className="like">
                   <p className="numLike" key={item.id}>
-                    <ImHeart /> <span> </span>
-                    <span> {item.likes} </span> <span>Likes</span>
+                    <ImHeart />
+                    <span> {item.likes} </span> 
+                    <span> Likes </span>
                   </p>
                 </div>
-                <div className="comment">
+                <div className="comment comment--search">
                   <p className="namecomment" key={item.id}>
                     <a
                     href="#"
@@ -93,6 +95,7 @@ const Search = () => {
                     </a>{" "}
                     {item.description}
                   </p>
+                </div>
                 </div>
               </div>
             </div>
