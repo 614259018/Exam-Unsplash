@@ -109,7 +109,7 @@ const Profile = () => {
                       <ImHeart className="icon" /> {item.likes} Likes
                       </div>
                       <p className="namecomment" key={item.id}>
-                      <span>{item.user.username}</span> {item.description}
+                      <span>@{item.user.username}</span> {item.description}
                     </p>
                     </div>
                   </div>

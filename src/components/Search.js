@@ -49,6 +49,7 @@ const Search = () => {
             <div className="items">
               <div className="content">
                 <div className="username username--search">
+                  <a className="profile_image-a">
                   <img
                     className="profile_image"
                     key={item.id}
@@ -57,6 +58,7 @@ const Search = () => {
                       sendProfile(item.user.username);
                     }}
                   />
+                  </a>
                   <a
                     href="#"
                     className="name"
@@ -91,7 +93,7 @@ const Search = () => {
                         sendProfile(item.user.username);
                       }}
                     >
-                      {item.user.username}
+                      @{item.user.username}
                     </a>{" "}
                     {item.description}
                   </p>
